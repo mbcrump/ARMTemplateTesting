@@ -23,6 +23,7 @@ jobs:
     - name: Azure Resource Manager (ARM) Template Deployment
       uses: whiteducksoftware/azure-arm-action@v2.2
       with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
         # Provide the name of a resource group.
         resourceGroupName: 'armgh-rg'
         # Specify the path to the Azure Resource Manager template.
