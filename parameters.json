@@ -20,9 +20,6 @@
         "serverFarmResourceGroup": {
             "value": "armgh-rg"
         },
-        "alwaysOn": {
-            "value": false
-        },
         "sku": {
             "value": "Free"
         },
