@@ -6,16 +6,16 @@
             "value": "d1ecc7ac-c1d8-40dc-97d6-2507597e7404"
         },
         "name": {
-            "value": "armgh"
+            "value": "armrg"
         },
         "location": {
-            "value": "West US"
+            "value": "West US 2"
         },
         "hostingEnvironment": {
             "value": ""
         },
         "hostingPlanName": {
-            "value": "ASP-armghrg-beb2"
+            "value": "ASP-armghrg-9f72"
         },
         "serverFarmResourceGroup": {
             "value": "armgh-rg"
