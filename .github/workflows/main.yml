@@ -29,6 +29,6 @@ jobs:
         # Specify the path to the Azure Resource Manager template.
         templateLocation: './template.json'
         # Incremental (only add resources to resource group) or Complete (remove extra resources from resource group).
-        deploymentMode: Incremental
+        #deploymentMode: Incremental
         # Supply deployment parameter values.
         parameters: './parameters.json'
