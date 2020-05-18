@@ -20,15 +20,11 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Azure Resource Manager (ARM) Template Deployment
-      uses: whiteducksoftware/azure-arm-action@v2.2
+    - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-        # Provide the name of a resource group.
+    - uses: whiteducksoftware/azure-arm-action-js@v1
+      with:
         resourceGroupName: 'armgh-rg'
-        # Specify the path to the Azure Resource Manager template.
         templateLocation: './template.json'
-        # Incremental (only add resources to resource group) or Complete (remove extra resources from resource group).
-        #deploymentMode: Incremental
-        # Supply deployment parameter values.
         parameters: './parameters.json'
