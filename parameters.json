@@ -12,7 +12,7 @@
             "value": "West US 2"
         },
         "alwaysOn": {
-            "value": "false"
+            "value": false
         },
         "hostingEnvironment": {
             "value": ""
